@@ -1,0 +1,5 @@
+bin\VbTriggers.dll
+bin\VbTriggers.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\VbTriggers.dll
+obj\Debug\VbTriggers.pdb

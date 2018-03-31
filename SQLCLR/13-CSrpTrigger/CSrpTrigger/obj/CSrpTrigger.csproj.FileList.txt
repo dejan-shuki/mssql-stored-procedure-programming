@@ -1,0 +1,5 @@
+bin\Debug\CSrpTrigger.dll
+bin\Debug\CSrpTrigger.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CSrpTrigger.dll
+obj\Debug\CSrpTrigger.pdb

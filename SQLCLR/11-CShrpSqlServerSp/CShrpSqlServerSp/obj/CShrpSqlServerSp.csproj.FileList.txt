@@ -1,0 +1,5 @@
+bin\Debug\CShrpSqlServerSp.dll
+bin\Debug\CShrpSqlServerSp.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CShrpSqlServerSp.dll
+obj\Debug\CShrpSqlServerSp.pdb

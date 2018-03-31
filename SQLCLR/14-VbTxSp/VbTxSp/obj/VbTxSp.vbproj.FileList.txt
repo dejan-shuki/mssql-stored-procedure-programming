@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\VbTxSp.dll
+bin\VbTxSp.pdb
+obj\Debug\VbTxSp.dll
+obj\Debug\VbTxSp.pdb

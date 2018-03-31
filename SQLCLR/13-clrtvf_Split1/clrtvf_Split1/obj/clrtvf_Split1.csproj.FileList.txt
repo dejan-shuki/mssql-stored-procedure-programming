@@ -1,0 +1,5 @@
+bin\Debug\clrtvf_Split1.dll
+bin\Debug\clrtvf_Split1.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\clrtvf_Split1.dll
+obj\Debug\clrtvf_Split1.pdb

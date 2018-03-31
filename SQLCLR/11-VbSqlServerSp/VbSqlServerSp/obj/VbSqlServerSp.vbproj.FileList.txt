@@ -1,0 +1,5 @@
+bin\VbSqlServerSp.dll
+bin\VbSqlServerSp.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\VbSqlServerSp.dll
+obj\Debug\VbSqlServerSp.pdb

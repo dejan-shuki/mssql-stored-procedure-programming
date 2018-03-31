@@ -1,0 +1,75 @@
+
+   XmlTextReader reader = new XmlTextReader("PO.xml");
+
+   // leave in whitespace
+
+   Console.WriteLine("Walking nodes in document..\n");
+
+   // use EOF property as loop breaking mechanism
+   while (!(reader.EOF))
+   {
+     // move the node to a content node if the 
+     // current node is not one of the following:
+     //non-whitespace text
+     //CDATA
+     //Element
+     //EndElement
+     //EntityReference
+     //EndEntity
+     reader.MoveToContent();
+
+     Console.WriteLine("Node Type:{0} Name: {0}", reader.NodeType,
+        reader.Name);
+
+
+     // check for the start of the State element
+     if (reader.IsStartElement() && reader.Name.Equals("City"))
+     {
+        // read <City>
+        reader.ReadStartElement();
+        // read city name string
+        Console.WriteLine(" -----> City: {0}", 
+          reader.ReadString());
+
+        // read </City>
+        reader.ReadEndElement();
+     }
+     // check for the start of the City element
+     else if (reader.IsStartElement() &&
+        reader.Name.Equals("State"))
+     {
+
+        // read the state name string 
+        // part between <State> ... </State>
+        // ...this is much easier than the city handling
+        Console.WriteLine(" -----> State: {0}",        
+        reader.ReadElementString());
+     }
+     // check for the start of the LineItem element
+     else if (reader.IsStartElement() && 
+        reader.Name.Equals("LineItem"))
+     {
+        // read the Name attribute value 
+        Console.WriteLine(" -----> LineItem Name: {0}", 
+        reader.GetAttribute("Name"));
+        // read the Price attribute value 
+        Console.WriteLine(" -----> LineItem Price: {0}", 
+        reader.GetAttribute("Price"));
+
+        // move beyond the current element node
+        reader.Read();
+     }
+     else
+        // move to the next node
+        // (this is required because the MoveToContent
+        // will not move the cursor if we are currently
+        // positioned on a node with content)
+        reader.Read();
+
+     }
+
+
+   }
+
+}
+}
